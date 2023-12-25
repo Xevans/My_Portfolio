@@ -1,0 +1,31 @@
+Nav bar:
+- home page thumbnail
+- socials: github, resume pdf
+- writing
+
+
+Welcome page content:
+- center alignment with 30% margins (article style)
+- About me
+- side bar
+    - timeline to jump to projects
+- top 3 projects
+
+
+Software Projects page content
+- center alignment with 30% margins (article style)
+- highlight of each project with autoplaying video demos (like those high quality gifs)
+    - code syntax accessable by viewer with a link to github (github icon with name of proj)
+
+
+Witing Projects page content
+- center alignment with 30% margins (article style)
+- about the story
+- about the author and the story
+- character and plot introductions
+- plans for the story
+- access to the prologue and Seraph's Diary
+
+
+
+
