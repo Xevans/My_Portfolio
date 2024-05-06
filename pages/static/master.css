@@ -1,0 +1,15 @@
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+#mail:hover {
+    cursor: pointer;
+}
+
+.custom-alert {
+    position: sticky;
+    top: 50px;
+    
+}

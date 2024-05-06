@@ -1,0 +1,33 @@
+{% extends "base.html" %} 
+
+{% block title %} Xavier Evans | Portfolio {% endblock %}
+
+{% block content %}
+
+<h1>Users</h1>
+<div class="container mt-5">
+    <table class="table" style="color: aliceblue;">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in pulled_users %}
+            <tr>
+                <td>{{ user.id }}</td>
+                <td>{{ user.name }}</td>
+                <td>{{ user.username }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.phone }}</td>
+            </tr>
+            {% endfor %}    
+        </tbody>
+    </table>
+</div>
+
+{% endblock content %}

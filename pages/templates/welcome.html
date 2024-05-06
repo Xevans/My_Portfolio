@@ -4,56 +4,86 @@
 
 {% block content %}
 
-
-<h1>Welcome Page</h1>
-
 <!--Demonstration of syntax highlighter being used. Should auto detect language.-->
 <!--<pre><code>int main(){ cout << "hello world" << endl;}</code></pre>-->
 
-<div class="container-fluid" style="margin: auto; text-align: center; justify-content: center; width: 90%; height: auto; background-color: aliceblue;">
+<div class="container-fluid" style="margin: auto; text-align: center; justify-content: center; width: 90%; height: auto; border-top-left-radius: 2%; border-top-right-radius: 2%;">
     <div style="padding: 20px;">
     
         <div class="row" style=" padding-top: 30px; padding-bottom: 30px;">
             <div class="col">
                 {% load static %}
-                <img src="{% static 'grey-box.png' %}" alt="placeholder" style="border-radius: 50%; height: 200px; width: 200px;">
+                <img src="{% static 'Lea!.png' %}" alt="placeholder" style="border-radius: 50%; height: 300px; width: 300px;">
             </div>
             <div class="col" style="justify-content: left; text-align: left;">
-                <h2>About Me</h2>
+                <h2>Passionate Software Engineer</h2>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque iaculis eget ipsum sit amet varius. Nunc neque augue, ullamcorper in ullamcorper sed, malesuada eu nisi. Phasellus a lorem quis purus sollicitudin varius. Pellentesque in tempor velit, quis iaculis velit. Nullam vestibulum, magna vitae ultricies finibus, nibh tortor ultricies neque, quis aliquet urna lacus quis nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur euismod quis dolor ac pharetra. In vulputate, lacus eget luctus placerat, ante felis gravida ante, quis pharetra quam ex sit amet nisi. Phasellus fermentum nulla id lacus sollicitudin feugiat.
                 </p>
-                <a href="{% static 'resume.pdf' %}" target="_blank">Resume</a>
+                <a href="{% static 'resume.pdf' %}" target="_blank">
+                    <button type="button" class="btn btn-primary">My Resume</button>
+                </a>
             </div>
         </div>
+
+        <hr>
     
         <div class="row" style="padding-bottom: 30px;">
             <div class="col" style="justify-content: left; text-align: left;">
                 <h2>Virtual Reality Wheelchair Rugby</h2>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque iaculis eget ipsum sit amet varius. Nunc neque augue, ullamcorper in ullamcorper sed, malesuada eu nisi. Phasellus a lorem quis purus sollicitudin varius. Pellentesque in tempor velit, quis iaculis velit. Nullam vestibulum, magna vitae ultricies finibus, nibh tortor ultricies neque, quis aliquet urna lacus quis nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur euismod quis dolor ac pharetra. In vulputate, lacus eget luctus placerat, ante felis gravida ante, quis pharetra quam ex sit amet nisi. Phasellus fermentum nulla id lacus sollicitudin feugiat.
+                    A wheelchair-accessible sports game designed for Oculus and Steam VR! Using Unreal Engine 5, my team and I challenged ourselves to design a VR sports game that would be fun without needing to stand. To meet our goal, we enriched ourselves on how people interact with wheelchairs in competitive sports and real-life. That knowledge and best game design practices helped us create a game that is both fun inclusive!
+
                 </p>
-                <a href="#"><img src="{% static 'github-mark.png' %}" alt="" style="height: 30px; height: 30px;"> View Github Project</a>
+                <a href="https://github.com/Xevans/WheelChairRugby">
+                    <button type="button" class="btn btn-primary"> <img src="{% static 'github-mark.png' %}" alt="" style="height: 30px; height: 30px;"> View Github Project</button>
+                </a>
     
             </div>
             <div class="col">
-                <img src="{% static 'grey-box.png' %}" alt="placeholder" style="width: 550px; height: 400px;">
+                <img src="{% static 'VR-rugby.gif' %}" alt="placeholder" style="width: 600px; height: 400px;">
             </div>
         </div>
+
+        <hr>
+
+        <div class="row" style="padding-bottom: 30px;">
+            <div class="col" style="justify-content: left; text-align: left;">
+                <h2>8080 disassembler</h2>
+                <p>
+                    A personal mission with the sole objective of learning. Emulation is something I have always been facinated with. The idea of software imitating an entire game console seemed like pure witchcraft. <br> 
+                    I cannot think of a more humbling yet rewarding project. I've divided up the project with the first piece being to create a disassembler. A tool that reads a file and matches its instructions to an instructionset I defined. The next step is creating the CPU, its registers and a proper memory map for it.
+
+                </p>
+                <a href="https://github.com/Xevans/8080-CPU-Disassembler">
+                    <button type="button" class="btn btn-primary"> <img src="{% static 'github-mark.png' %}" alt="" style="height: 30px; height: 30px;"> View Github Project</button>
+                </a>
+    
+            </div>
+            <div class="col">
+                <img src="{% static 'VR-rugby.gif' %}" alt="placeholder" style="width: 600px; height: 400px;">
+            </div>
+        </div>
+
+        <hr>
     
         <div class="row" style="padding-bottom: 30px;">
             <div class="col">
-                <img src="{% static 'grey-box.png' %}" alt="placeholder" style="width: 550px; height: 400px;">
+                <img src="{% static 'sudoku.png' %}" alt="placeholder" style="width: 600px; height: 400px;">
             </div>
             <div class="col" style="justify-content: left; text-align: left;">
                 <h2>Sudoku Solver + Generator</h2>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque iaculis eget ipsum sit amet varius. Nunc neque augue, ullamcorper in ullamcorper sed, malesuada eu nisi. Phasellus a lorem quis purus sollicitudin varius. Pellentesque in tempor velit, quis iaculis velit. Nullam vestibulum, magna vitae ultricies finibus, nibh tortor ultricies neque, quis aliquet urna lacus quis nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur euismod quis dolor ac pharetra. In vulputate, lacus eget luctus placerat, ante felis gravida ante, quis pharetra quam ex sit amet nisi. Phasellus fermentum nulla id lacus sollicitudin feugiat.
+                    A self-imposed project to re-create my favorite pass-time. Backtracking turned out to be a difficult concept to understand. Thanks to a chat during a walk, I've decided to incorporate state tracking for potentially faster board generation.
                 </p>
-                <a href="#"><img src="{% static 'github-mark.png' %}" alt="" style="height: 30px; height: 30px;"> View Github Project</a>
+                <a href="https://github.com/Xevans/SudokuSolver">
+                    <button type="button" class="btn btn-primary"> <img src="{% static 'github-mark.png' %}" alt="" style="height: 30px; height: 30px;"> View Github Project</button>
+                </a>
     
             </div>
         </div>
+
+        <hr>
     
         <div class="row" style="padding-bottom: 30px;">
             <div class="col" style="justify-content: left; text-align: left;">
@@ -61,11 +91,13 @@
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque iaculis eget ipsum sit amet varius. Nunc neque augue, ullamcorper in ullamcorper sed, malesuada eu nisi. Phasellus a lorem quis purus sollicitudin varius. Pellentesque in tempor velit, quis iaculis velit. Nullam vestibulum, magna vitae ultricies finibus, nibh tortor ultricies neque, quis aliquet urna lacus quis nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur euismod quis dolor ac pharetra. In vulputate, lacus eget luctus placerat, ante felis gravida ante, quis pharetra quam ex sit amet nisi. Phasellus fermentum nulla id lacus sollicitudin feugiat.
                 </p>
-                <a href="#"><img src="{% static 'github-mark.png' %}" alt="" style="height: 30px; height: 30px;"> View Github Project</a>
+                <a href="https://github.com/Xevans/Stock-Trader">
+                    <button type="button" class="btn btn-primary"> <img src="{% static 'github-mark.png' %}" alt="" style="height: 30px; height: 30px;"> View Github Project</button>
+                </a>
     
             </div>
             <div class="col">
-                <img src="{% static 'grey-box.png' %}" alt="placeholder" style="width: 550px; height: 400px;">
+                <img src="{% static 'trader.png' %}" alt="placeholder" style="width: 650px; height: 400px;">
             </div>
         </div>
     </div>

@@ -1,0 +1,23 @@
+<h1>Name to age</h1>
+
+<div class="form-content">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-row">
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label class="small mb-1">Enter your name and agify API will guess your age!</label>
+                    {{ name_form.name }}
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <button type="submit" class="btn btn-dark btn-lg">Submit</button>
+    </form>
+
+    <div>
+        {% if my_age %}
+        <h4>Your age is {{ my_age.age }}</h4>
+        {% endif %}
+    </div>
+</div>
